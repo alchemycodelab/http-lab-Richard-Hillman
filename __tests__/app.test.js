@@ -4,7 +4,7 @@ const server = require('../lib/app');
 describe('app routes', () => {
   
   
-  it('responds', async() => {
+  it.skip('responds', async() => {
     const res = await request(server)
       .get('/');
  
@@ -14,7 +14,7 @@ describe('app routes', () => {
 
   // ------------------------------------------
 
-  it('returns red', async() => {
+  it.skip('returns red', async() => {
     const res = await request(server)
       .get('/redrum');
 
@@ -25,7 +25,7 @@ describe('app routes', () => {
 
   // ------------------------------------------
 
-  it('returns green', async() => {
+  it.skip('returns green', async() => {
     const res = await request(server)
       .get('/greenyum');
 
@@ -36,7 +36,7 @@ describe('app routes', () => {
 
   // ------------------------------------------
 
-  it('returns blue', async() => {
+  it.skip('returns blue', async() => {
     const res = await request(server)
       .get('/bluegoo');
 
