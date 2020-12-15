@@ -4,7 +4,7 @@ const server = require('../lib/app');
 describe('app routes', () => {
   
   
-  it.only('responds', async() => {
+  it('responds', async() => {
     const res = await request(server)
       .get('/');
  
